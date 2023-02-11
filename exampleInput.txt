@@ -1,0 +1,88 @@
+Required format for input.txt:
+- Line 1: id of each switching center separated by a semicolon
+- Line 2: id of starting center
+- Line 3: id of ending center
+- Line 4 - ?: id of the two centers making up a communication line and the bandwidth between them separated by a semicolon 
+
+
+Example 1:
+*****
+A;B;C;D
+A
+D
+A;B;10
+B;D;15
+A;C;14
+C;B;15
+D;A;12
+*****
+Example 1 solution:
+14
+
+
+Example 2:
+*****
+A;B;C;D;E;F
+D
+B
+B;D;5
+A;F;7
+A;C;12
+E;F;2
+E;D;20
+B;C;6
+D;A;11
+F;D;10
+*****
+Example 2 solution:
+6
+
+
+Example 3:
+*****
+NewYorkCity;Trenton;Boston;Philadelphia;Hoboken
+Philadelphia
+Boston
+Philadelphia;NewYorkCity;15
+Philadelphia;Hoboken;15
+NewYorkCity;Hoboken;20
+Trenton;Hoboken;15
+Philadelphia;Trenton;20
+Boston;NewYorkCity;15
+Boston;Hoboken;10
+*****
+Example 3 solution:
+15
+
+
+Example 4:
+*****
+A;B1;B2;C1;C2;D1;D2;E
+A
+E
+A;B1;2000000
+A;B2;100
+B1;C1;1
+B2;C2;100
+C1;D1;10000000
+C2;D2;100
+D1;E;5000000
+D2;E;100
+*****
+Example 4 solution:
+100
+
+
+Example 5:
+*****
+A;B;C;D;E
+C
+E
+A;C;10
+A;B;15
+C;B;12
+D;E;20
+*****
+Example 5 solution:
+0
+Note (there is no path between the two value. So there is no bandwidth on their paths.)
