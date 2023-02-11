@@ -1,0 +1,10 @@
+NewYorkCity;Trenton;Boston;Philadelphia;Hoboken;Trenton
+Philadelphia
+Boston
+Philadelphia;NewYorkCity;15
+Philadelphia;Hoboken;15
+NewYorkCity;Hoboken;20
+Trenton;Boston;30
+Philadelphia;Trenton;40
+Boston;NewYorkCity;15
+Boston;Hoboken;10
